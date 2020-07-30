@@ -4,7 +4,7 @@
   "description": "An example Dash component.",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack --config ./webpack.serve.config.js --open",
+    "start": "webpack-serve --config ./webpack.serve.config.js --open",
     "validate-init": "python _validate_init.py",
     "prepublishOnly": "npm run validate-init",
     "build:js": "webpack --mode production",

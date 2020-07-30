@@ -2,7 +2,7 @@ import React, {Component, lazy, Suspense} from 'react';
 import PropTypes from 'prop-types';
 import './bulma.css';
 
-const RealButton = lazy("../../fragment/ButtonFragment.react.js");
+const RealButton = lazy("../../fragment/ButtonLazy.js");
 
 class BulmaButton extends Component {
     constructor(props) {
