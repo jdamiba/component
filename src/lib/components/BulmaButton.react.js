@@ -1,8 +1,7 @@
-import React, {Component, lazy, Suspense} from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './bulma.css';
-
-const RealButton = lazy("../../fragment/ButtonLazy.js");
+import { Button } from 'react-bulma-components/dist';
 
 class BulmaButton extends Component {
     constructor(props) {
@@ -11,11 +10,12 @@ class BulmaButton extends Component {
 
 
       render() {
+        const {value, color, rounded, disabled, outlined, size, inverted, loading } = this.props;
 
         return (
-          <Suspense fallback={null}>
-            <RealButton {...this.props}/>
-          </Suspense>
+          <Button color={color} rounded={rounded} disabled={disabled} outlined={outlined} size={size} inverted={inverted} loading={loading}>
+            {value}
+          </Button>
         );
       }
 }
@@ -39,6 +39,7 @@ BulmaButton.propTypes = {
      * The size of the button.
      */
     size: PropTypes.oneOf(['small', 'medium', 'large']),
+    
     /**
      * The color of the button.
      */
