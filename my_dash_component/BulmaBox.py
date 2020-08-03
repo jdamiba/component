@@ -8,7 +8,8 @@ class BulmaBox(Component):
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): Children"""
+- children (a list of or a singular dash component, string or number; optional): Dash-assigned callback that should be called to report property changes
+to Dash, to make them available for callbacks."""
     @_explicitize_args
     def __init__(self, children=None, **kwargs):
         self._prop_names = ['children']

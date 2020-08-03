@@ -14,7 +14,8 @@ bulmaBox(children=NULL)
 }
 
 \arguments{
-\item{children}{A list of or a singular dash component, string or number. Children}
+\item{children}{A list of or a singular dash component, string or number. Dash-assigned callback that should be called to report property changes
+to Dash, to make them available for callbacks.}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}
