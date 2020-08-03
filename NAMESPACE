@@ -1,10 +1,18 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
+export(Board)
 export(BulmaBox)
 export(BulmaButton)
+export(Clock)
+export(Game)
 export(MyDashComponent)
+export(Square)
 export(bulmaBox)
 export(bulmaButton)
+export(game)
 export(toggle)
+export(square)
+export(board)
 export(myDashComponent)
+export(clock)
 export(textInput)

@@ -1,10 +1,8 @@
 /* eslint-disable import/prefer-default-export */
-import MyDashComponent from './components/MyDashComponent.react';
+import Game from './components/Game';
 
-import BulmaButton from './components/BulmaButton.react';
-
-import BulmaBox from './components/BulmaBox.react';
+import "./index.css"
 
 export {
-    MyDashComponent, BulmaButton, BulmaBox
+    Game
 };

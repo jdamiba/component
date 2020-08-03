@@ -1,9 +1,6 @@
 /* eslint no-magic-numbers: 0 */
 import React, {Component} from 'react';
-
-import { BulmaButton } from '../lib';
-
-import { BulmaBox } from '../lib';
+import { Game } from '../lib';
 
 class App extends Component {
 
@@ -20,14 +17,7 @@ class App extends Component {
     }
 
     render() {
-        return <>
-
-        <BulmaBox>
-            <BulmaButton label={'Mandela'} color="info" value={this.state.value} size="large" rounded disabled setProps={this.setProps}/>
-            <BulmaButton size="small" label={'Mandela'} color="info" value={this.state.value} rounded disabled setProps={this.setProps}/>
-        </BulmaBox>
-
-        </>
+        return (<Game/>)
     }
 }
 
